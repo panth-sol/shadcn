@@ -1,11 +1,11 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { buttonVariants, Button } from "@/components/ui/button"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
           Beautifully designed components <br className="hidden sm:inline" />
@@ -33,6 +33,8 @@ export default function IndexPage() {
         >
           GitHub
         </Link>
+        <Button variant="secondary" className="duration-500 animate-in zoom-in">Secondary</Button>
+        <Button variant="ghost">Ghost</Button>
       </div>
     </section>
   )
